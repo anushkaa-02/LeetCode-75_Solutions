@@ -35,3 +35,5 @@ public:
     }
 };
 ```
+## Tags
+`Binary Search` `Interactive`
