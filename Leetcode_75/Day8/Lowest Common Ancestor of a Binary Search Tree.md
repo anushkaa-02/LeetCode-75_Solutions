@@ -11,4 +11,5 @@
       Explanation: The LCA of nodes 2 and 8 is 6.
       
 
-
+- ## Solution:
+```cpp
