@@ -16,3 +16,16 @@ A valid BST is defined as follows:
 
 - ## Solution:
 ```cpp
+class Solution {
+public:
+    bool solve(TreeNode* root,long long int minimum,long long int maximum){
+        if(root==NULL) return true;
+        
+        if(root->val>=maximum || root->val <= minimum) return false;
+        
+        return solve(root->left,minimum,root->val) && solve(root->right,root->val,maximum);
+    }
+    bool isValidBST(TreeNode* root) {
+        return solve(root,LLONG_MIN,LLONG_MAX);
+    }
+};
