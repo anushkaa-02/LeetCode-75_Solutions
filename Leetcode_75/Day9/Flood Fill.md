@@ -9,3 +9,10 @@
 >Return the modified image after performing the flood fill
 
 - Example :
+
+      Input: image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0
+      Output: [[0,0,0],[0,0,0]]
+      Explanation: The starting pixel is already colored 0, so no changes are made to the image.
+      
+- ## Solution:
+```cpp
