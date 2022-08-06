@@ -45,3 +45,4 @@ int numIslands(vector<vector<char>>& grid) {
 ```
 
 ## Tags
+`Array` `DFS`
