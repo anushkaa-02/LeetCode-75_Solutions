@@ -15,3 +15,5 @@
       2. Down -> Down -> Right
       3. Down -> Right -> Down
 
+- ## Solution:
+```cpp
