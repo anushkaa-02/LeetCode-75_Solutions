@@ -6,4 +6,8 @@
 >
 >Return the minimum cost to reach the top of the floor.
 
+- Example :
+
+
+
 
