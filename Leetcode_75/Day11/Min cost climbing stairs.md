@@ -14,6 +14,9 @@
       - Pay 15 and climb two steps to reach the top.
       The total cost is 15.
       
+- ## Solution:
+```cpp
+      
 
 
 
