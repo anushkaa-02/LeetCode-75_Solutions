@@ -32,3 +32,6 @@ public:
     }
 };
 ```
+
+## Tags
+`Array` `Dynamic Programming`
