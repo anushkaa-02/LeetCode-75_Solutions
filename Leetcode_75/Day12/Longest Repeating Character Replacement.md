@@ -12,3 +12,36 @@
       
 - ## Solution:
 ```cpp
+class Solution{
+public:
+    int characterReplacement(string s, int k) {
+        int maxel=0;
+        int l=65;
+        while(l<122){
+        int i=0,j=0;
+        int k1=k;
+        while(i<s.size()){
+            while(j<s.size()){
+                if(s[j]==l) j++;
+                else if(s[j]!=l){
+                    if(k1==0) break;
+                    j++;
+                    k1--;
+                }
+            }
+            if(j>=s.size()){
+                maxel=max(maxel,j-i);
+                break;
+            }
+            else{
+                maxel=max(maxel,j-i);
+            }
+            if(s[i]!=l) k1++;
+            i++;
+        }
+            l++;
+        }
+        return maxel;
+    }
+};
+```
