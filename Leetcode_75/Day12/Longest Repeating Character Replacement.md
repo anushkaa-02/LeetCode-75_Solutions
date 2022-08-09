@@ -10,3 +10,5 @@
       Output: 4
       Explanation: Replace the two 'A's with two 'B's or vice versa.
       
+- ## Solution:
+```cpp
