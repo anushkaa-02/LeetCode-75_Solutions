@@ -9,3 +9,13 @@
 >Given the secret number secret and your friend's guess guess, return the hint for your friend's guess.
 >
 >The hint should be formatted as "xAyB", where x is the number of bulls and y is the number of cows. Note that both secret and guess may contain duplicate digits.
+
+
+- Example :
+
+      Input: secret = "1807", guess = "7810"
+      Output: "1A3B"
+      Explanation: Bulls are connected with a '|' and cows are underlined:
+      "1807"
+        |
+      "7810"
