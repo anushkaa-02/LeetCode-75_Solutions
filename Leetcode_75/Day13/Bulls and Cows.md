@@ -62,3 +62,4 @@ public:
 ```
 
 ## Tags
+`Hash table` `String` `Counting`
