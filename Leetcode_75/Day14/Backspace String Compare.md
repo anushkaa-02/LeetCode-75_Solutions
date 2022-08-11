@@ -4,3 +4,5 @@
 >
 >Note that after backspacing an empty text, the text will continue empty.
 
+- Example :
+
