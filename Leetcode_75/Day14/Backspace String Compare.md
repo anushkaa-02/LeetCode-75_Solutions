@@ -11,3 +11,5 @@
       Explanation: Both s and t become "ac".
       
 
+- ## Solution:
+```cpp
