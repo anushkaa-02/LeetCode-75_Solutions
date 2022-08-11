@@ -17,3 +17,43 @@
   
 - ## Solution:
 ```cpp
+class Solution {
+public:
+   string decodeString(string str) {
+        stack<char>s;
+        for(int i=0; i<str.length(); i++){
+            if(str[i] != ']'){
+                s.push(str[i]);
+            }else{
+                string temp = "";
+                while(s.empty() == false && s.top() != '['){
+                    temp = s.top()+temp;
+                    s.pop();
+                }
+                s.pop();
+                
+                string numTemp = "";
+                while(s.empty() == false && isdigit(s.top())){
+                    numTemp = s.top() + numTemp;
+                    s.pop();
+                }
+                int k = stoi(numTemp);
+                
+                while(k--){
+                    for(char c:temp){
+                        s.push(c);
+                    }
+                }
+            }
+        }
+        
+        string output = "";
+        while(s.empty() == false){
+            output += s.top();
+            s.pop();
+        }
+        
+        reverse(output.begin(), output.end());
+        return output;
+    }
+};
