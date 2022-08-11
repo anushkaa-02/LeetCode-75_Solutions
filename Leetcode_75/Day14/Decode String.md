@@ -8,3 +8,6 @@
 >
 >The test cases are generated so that the length of the output will never exceed 105.
 
+
+- Example :
+
