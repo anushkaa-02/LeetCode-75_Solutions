@@ -15,3 +15,5 @@
       Output: "aaabcbc"
       
   
+- ## Solution:
+```cpp
