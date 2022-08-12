@@ -24,3 +24,23 @@
 
 - ## Solution:
 ```cpp
+class Solution {
+public:
+    int lastStoneWeight(vector<int>& stones) {
+        priority_queue<int> pq;
+        pq.push(0);
+        for(auto it:stones)
+            pq.push(it);
+        while(pq.size() > 1)
+        {
+            int max = pq.top();
+            pq.pop();
+            int max2 = pq.top();
+            pq.pop();
+            if(max > max2)
+                pq.push(max - max2);
+        }
+        return pq.top();
+    }
+};
+```
