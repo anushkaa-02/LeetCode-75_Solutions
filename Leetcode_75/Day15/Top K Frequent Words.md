@@ -50,3 +50,4 @@ public:
 };
 ```
 ## Tags
+`Hash table` `String` `Sorting`
