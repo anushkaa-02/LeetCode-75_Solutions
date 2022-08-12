@@ -9,3 +9,7 @@
 >At the end of the game, there is at most one stone left.
 >
 >Return the weight of the last remaining stone. If there are no stones left, return 0.
+
+
+- Example :
+
