@@ -9,3 +9,14 @@
 >We drop one ball at the top of each column of the box. Each ball can get stuck in the box or fall out of the bottom. A ball gets stuck if it hits a "V" shaped pattern >between two boards or if a board redirects the ball into either wall of the box.
 >
 >Return an array answer of size n where answer[i] is the column that the ball falls out of at the bottom after dropping the ball from the ith column at the top, or -1 >if the ball gets stuck in the box.
+
+- Example :
+
+      Input: grid = [[1,1,1,-1,-1],[1,1,1,-1,-1],[-1,-1,-1,1,1],[1,1,1,1,-1],[-1,-1,-1,-1,-1]]
+      Output: [1,-1,-1,-1,-1]
+      Explanation: This example is shown in the photo.
+      Ball b0 is dropped at column 0 and falls out of the box at column 1.
+      Ball b1 is dropped at column 1 and will get stuck in the box between column 2 and 3 and row 1.
+      Ball b2 is dropped at column 2 and will get stuck on the box between column 2 and 3 and row 0.
+      Ball b3 is dropped at column 3 and will get stuck on the box between column 2 and 3 and row 0.
+      Ball b4 is dropped at column 4 and will get stuck on the box between column 2 and 3 and row 1.
