@@ -4,3 +4,8 @@
 >
 >If there is no common prefix, return an empty string ""
 
+- Example :
+
+      Input: strs = ["flower","flow","flight"]
+      Output: "fl"
+      
