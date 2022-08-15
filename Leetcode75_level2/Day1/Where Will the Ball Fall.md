@@ -20,3 +20,41 @@
       Ball b2 is dropped at column 2 and will get stuck on the box between column 2 and 3 and row 0.
       Ball b3 is dropped at column 3 and will get stuck on the box between column 2 and 3 and row 0.
       Ball b4 is dropped at column 4 and will get stuck on the box between column 2 and 3 and row 1.
+
+- ## Solution:
+```cpp
+class Solution {
+public:
+    bool isvalid(int x, int y, vector<vector<int>>& grid){
+        if( x<0 || y<0 || y>=grid[0].size()) return false;
+        return true;
+    }
+    
+    void dfs(int x, int y, vector<vector<int>>& grid, int &col){
+        if(x>=grid.size()){
+            col=y;
+            return;
+        }
+        
+        if(grid[x][y]==1 && isvalid(x,y+1,grid) && grid[x][y+1]==1){
+            dfs(x+1, y+1, grid, col);
+        }
+        else if(grid[x][y]==-1 && isvalid(x,y-1,grid) && grid[x][y-1]==-1){
+            dfs(x+1,y-1,grid,col);
+        }
+        else return;
+    }
+    
+    vector<int> findBall(vector<vector<int>>& grid) {
+        int n=grid.size(), m=grid[0].size();
+        vector<int>ans(m,-1);
+        
+        for(int j=0; j<m; j++){
+            int col=-1;
+            dfs(0,j,grid,col);
+            ans[j]=col;
+        }
+        return ans;
+    }
+};
+```
