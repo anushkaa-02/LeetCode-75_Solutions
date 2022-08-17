@@ -6,3 +6,12 @@
 >
 >Return the least number of units of times that the CPU will take to finish all the given tasks.
 
+
+
+- Example :
+
+      Input: tasks = ["A","A","A","B","B","B"], n = 2
+      Output: 8
+      Explanation: 
+      A -> B -> idle -> A -> B -> idle -> A -> B
+      There is at least 2 units of time between any two same tasks.
