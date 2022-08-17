@@ -8,3 +8,5 @@
 >
 >A palindrome is a string that reads the same forward and backward.
 
+- Example :
+
