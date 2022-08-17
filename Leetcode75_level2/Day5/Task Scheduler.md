@@ -15,3 +15,6 @@
       Explanation: 
       A -> B -> idle -> A -> B -> idle -> A -> B
       There is at least 2 units of time between any two same tasks.
+
+- ## Solution:
+```cpp
