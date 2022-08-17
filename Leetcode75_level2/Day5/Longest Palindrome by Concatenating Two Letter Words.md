@@ -19,3 +19,33 @@
 
 - ## Solution:
 ```cpp
+class Solution {
+public:
+    int longestPalindrome(vector<string>& words) {
+        int count = 0;
+        int samesies = 0;
+        unordered_map<string, int> umap;
+        for(string word: words){
+            string rev = "";
+            rev += word[1];
+            rev += word[0];
+            if (umap[rev]>0){
+                count += 2;
+                umap[rev]--;
+                if (word[0] == word[1]){
+                    samesies--;
+                }
+            }else{
+                umap[word]++;
+                if (word[0] == word[1]){
+                    samesies++;
+                }
+            }
+        }
+        if (samesies>0){
+            count++;
+        }
+        return count*2;
+    }
+};
+```
