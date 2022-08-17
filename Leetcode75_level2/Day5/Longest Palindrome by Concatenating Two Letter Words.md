@@ -10,3 +10,8 @@
 
 - Example :
 
+
+      Input: words = ["lc","cl","gg"]
+      Output: 6
+      Explanation: One longest palindrome is "lc" + "gg" + "cl" = "lcggcl", of length 6.
+      Note that "clgglc" is another longest palindrome that can be created.
