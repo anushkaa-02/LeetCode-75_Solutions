@@ -15,3 +15,47 @@
 
 - ## Solution:
 ```cpp
+class Solution {
+public:
+    ListNode* oddEvenList(ListNode* head) {
+        ListNode* n1=NULL;
+        ListNode* n2=NULL;
+        if(head==NULL or head->next==NULL) return head;
+        ListNode* odd=head;
+        ListNode* even=head->next;
+        n1=odd;
+        n2=even;
+        while(odd!=NULL and even!=NULL)
+        {
+            if(even->next!=NULL)
+            {
+                odd->next=even->next;
+                odd=even->next;
+            }
+            else 
+            {
+                odd->next=NULL;
+                break;
+            }
+            if(odd->next!=NULL)
+            {
+                even->next=odd->next;
+                even=odd->next;
+            }
+            else
+            {
+                even->next=NULL;
+                break;
+            }
+               
+        }
+        ListNode* od=n1;
+        while(n1->next!=NULL)
+        {
+            n1=n1->next;
+        }
+        n1->next=n2;
+        return od;
+    }
+};
+```
