@@ -78,3 +78,6 @@ public:
     }
 };
 ```
+
+## Tags
+`Linked List` `Two Pointers`
