@@ -26,3 +26,5 @@ TreeNode* invertTree(TreeNode* root) {
 }
 };
 ```
+## Tags
+`Tree` `DFS`
