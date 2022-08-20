@@ -11,3 +11,29 @@
       Output: true
       
  
+- ## Solution:
+```cpp
+class Solution {
+public:
+    bool searchMatrix(const vector<vector<int>>& matrix, int target) {
+        const auto linear = makeLinear(matrix);
+        return std::binary_search(linear.begin(), linear.end(), target);
+    }
+private:
+   std::vector<int> makeLinear(const std::vector<std::vector<int>> & input)
+   {
+    std::vector<int> result{};
+    result.reserve(input[0].size() * input.size());
+    for (const auto& row : input)
+    {
+        for (const auto& element : row)
+        {
+            result.emplace_back(element);
+        }
+    }
+    return result;
+   }
+};
+```
+
+##
