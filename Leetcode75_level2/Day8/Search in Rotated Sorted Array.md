@@ -46,3 +46,5 @@ public:
     }
 };
 ```
+## Tags
+`Array` `Binary Search`
