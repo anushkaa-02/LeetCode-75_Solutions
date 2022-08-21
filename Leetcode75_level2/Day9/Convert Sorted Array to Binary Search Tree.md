@@ -29,3 +29,5 @@ public:
     }
 };
 ```
+## Tags
+`Array` `Divide conquer` 
