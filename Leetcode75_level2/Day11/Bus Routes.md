@@ -8,3 +8,8 @@
 >Return the least number of buses you must take to travel from source to target. Return -1 if it is not possible.
 
 
+- Example :
+
+      Input: routes = [[1,2,7],[3,6,7]], source = 1, target = 6
+      Output: 2
+      Explanation: The best strategy is take the first bus to the bus stop 7, then take the second bus to the bus stop 6.
