@@ -4,3 +4,8 @@
 >
 >Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
 
+- Example :
+
+      Input: p = [1,2,3], q = [1,2,3]
+      Output: true
+      
